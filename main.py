@@ -18,6 +18,16 @@ my_list.reverse()
 print(my_list)
 
 # Problem 2
+
+person = {"name" : "John","age":30,"job" : "teacher"}
+print(person.get("job"))
+person.update({"city" : "paris"})
+print(person)
+del person["age"]
+print(person)
+for key in person:
+    print(key + " " + person.get(key) + "\n")
+    
 # Put your solution here, make sure I can run it by running this file. Do not submit it commented out.
 
 # -----------------------------------------------------------------------------
