@@ -83,6 +83,19 @@ def test_count_vowels():
 
 # Function 2: merge_lists
 def merge_lists(list1: list, list2: list) -> list:
+    mergedlist = []
+    while(len(list1)>0 and len(list2)>0):
+        val1 = list1[0]
+        val2 = list2[0]
+        if(val1<=val2):
+            mergedlist.append(list1.pop(0))
+        else:
+            mergedlist.append(list2.pop(0))
+    for num in list1:
+        mergedlist.append(num)
+    for num in list2:
+        mergedlist.append(num)
+    return mergedlist
     """
     Merge two sorted lists into a single sorted list.
 
