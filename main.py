@@ -159,6 +159,12 @@ def test_word_lengths():
 
 # Function 4: reverse_string
 def reverse_string(s: str) -> str:
+    output = ""
+    counter = len(s)-1
+    while counter >= 0:
+        output+=(s[counter])
+        counter-=1
+    return output
     """
     Reverse a string.
 
