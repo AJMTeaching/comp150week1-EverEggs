@@ -193,6 +193,19 @@ def test_reverse_string():
 
 # Function 5: intersection
 def intersection(list1: list, list2: list) -> list:
+    items = {}
+    output = []
+    for item in list1:
+        items.update({item: 1})
+    for item in list2:
+        items.update({item: items.get(item,0)+1})
+    for key, value in items.items():
+        if(value>1):
+            output.append(key)
+    return output
+        
+                
+
     """
     Find the intersection of two lists.
 
