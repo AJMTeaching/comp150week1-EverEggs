@@ -47,6 +47,13 @@ def test(did_pass):
 
 # Function 1: count_vowels
 def count_vowels(s: str) -> int:
+    vowels = ["a","e","i","o","u"]
+    output = 0
+    for letter in s:
+        for vowel in vowels:
+            if(letter.lower() == vowel):
+                output+=1
+    return output
     """
     Count the number of vowels in a string.
 
